@@ -10,8 +10,8 @@
 	<body>
 		<div class="container">
 			<div class="centered">
-				<h1>IK GATH 2017</h1>
-				<p id="countdown"></p>
+				<h1><s>IK Gath 2017</s></h1>
+				<h3 id="countdown"></h3>
 			</div>
 			<img id="cloud-1" class="cloud-image" src="./assets/images/cloud.svg" />
 			<img id="cloud-2" class="cloud-image" src="./assets/images/cloud.svg" />
@@ -33,7 +33,7 @@
 		  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 		  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		  document.getElementById("countdown").innerHTML = months + " bulan " + days + " Hari<br>" + hours + " Jam " + minutes + " Menit<br>" + seconds + " detik";
+		  document.getElementById("countdown").innerHTML = months + " : " + days + " : " + hours + " : " + minutes + " : " + seconds;
 
 		  if (distance < 0) {
 		    clearInterval(x);
