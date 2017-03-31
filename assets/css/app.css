@@ -19,4 +19,53 @@
 
 .centered > h1,h2,h3,h4,h5,p {
 	margin: 0.05rem 0.05rem 0.05rem 0.05rem;
+	z-index: 1;
+}
+
+.cloud-image {
+	position: absolute;
+	width: 12.5em;
+	height: auto;
+}
+
+#cloud-1 {
+	top: 5%;
+	left: 10%;
+	animation: cloudTranslateLeft 3.5s alternate infinite ease-in-out;
+}
+
+#cloud-2 {
+	top: 15%;
+	left: 80%;
+	animation: cloudTranslateRight 4.5s alternate infinite ease-in-out;
+}
+
+#cloud-3 {
+	top: 70%;
+	left: 30%;
+	animation: cloudTranslateLeft 4s alternate infinite ease-in-out;
+}
+
+#cloud-4 {
+	top: 60%;
+	left: 80%;
+	animation: cloudTranslateRight 3.5s alternate infinite ease-in-out;
+}
+
+@keyframes cloudTranslateLeft {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(5em);
+	}
+}
+
+@keyframes cloudTranslateRight {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-5em);
+	}
 }

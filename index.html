@@ -10,25 +10,30 @@
 	<body>
 		<div class="container">
 			<div class="centered">
-				<h1>Countdown</h1>
+				<h1>IK GATH 2017</h1>
 				<p id="countdown"></p>
 			</div>
+			<img id="cloud-1" class="cloud-image" src="./assets/images/cloud.svg" />
+			<img id="cloud-2" class="cloud-image" src="./assets/images/cloud.svg" />
+			<img id="cloud-3" class="cloud-image" src="./assets/images/cloud.svg" />
 		</div>
 	</body>
 
 	<script type="text/javascript">
-		var countDownDate = new Date("Sep 23, 2017 00:00:00").getTime();
+		var daysOfMonths = [31,28,31,30,31,30,31,31,30,31,30,31];
+		var countDownDate = new Date("Sep 23, 2017 00:00:00");
 		var x = setInterval(function() {
 
-		  var now = new Date().getTime();
-		  var distance = countDownDate - now;
+		  var now = new Date();
+		  var distance = countDownDate.getTime() - now.getTime();
 
-		  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+		  var months =  countDownDate.getMonth() - now.getMonth();
+		  var days = daysOfMonths[now.getMonth()] - now.getDate();
 		  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 		  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 		  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		  document.getElementById("countdown").innerHTML = days + " Hari " + hours + " Jam " + minutes + " Menit " + seconds + " Detik ";
+		  document.getElementById("countdown").innerHTML = months + " bulan " + days + " Hari<br>" + hours + " Jam " + minutes + " Menit<br>" + seconds + " detik";
 
 		  if (distance < 0) {
 		    clearInterval(x);
