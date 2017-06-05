@@ -2,43 +2,67 @@
 	<html>
 	<head>
 		<title>Coming Soon! | CS UI Gath 2017</title>
-		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="./assets/css/normalize.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway:700" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="./assets/css/app.css">
 	</head>
 
 	<body>
-		<div class="container">
-			<div class="centered">
-				<h1><s>IK Gath 2017</s></h1>
-				<h3 id="countdown"></h3>
+		<div class="container-cs">
+			<img src="./assets/images/ungu.svg" />
+			<div class="text">
+				<h1>COMING<br/>SOON</h1>
 			</div>
-			<img id="cloud-1" class="cloud-image" src="./assets/images/cloud.svg" />
-			<img id="cloud-2" class="cloud-image" src="./assets/images/cloud.svg" />
-			<img id="cloud-3" class="cloud-image" src="./assets/images/cloud.svg" />
+		</div>
+		<div class="container-cd">
+			<img src="./assets/images/biru.svg" />
+			<div class="countdown-container" id="countdown">
+				<span class="days"></span>
+			    <span class="minutes"></span>
+			    <span class="seconds"></span>
+			</div>
 		</div>
 	</body>
 
 	<script type="text/javascript">
-		var daysOfMonths = [31,28,31,30,31,30,31,31,30,31,30,31];
-		var countDownDate = new Date("Sep 23, 2017 00:00:00");
-		var x = setInterval(function() {
+		function getTimeRemaining(endtime){
+			var t = Date.parse(endtime) - Date.parse(new Date());
+			var seconds = Math.floor((t / 1000) % 60);
+			var minutes = Math.floor((t / 1000 / 60) % 60);
+			var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+			var days = Math.floor(t/(1000 * 60 * 60 * 24));
+	
+			return {
+				'total': t,
+				'days': days,
+				'hours': hours,
+				'minutes': minutes,
+				'seconds': seconds
+			};
+		}
 
-		  var now = new Date();
-		  var distance = countDownDate.getTime() - now.getTime();
+		function initializeClock(id, endtime){
+			var clock = document.getElementById(id);
+			var daysSpan = clock.querySelector('.days');
+			var minutesSpan = clock.querySelector('.minutes');
+			var secondsSpan = clock.querySelector('.seconds');
 
-		  var months =  countDownDate.getMonth() - now.getMonth();
-		  var days = daysOfMonths[now.getMonth()] - now.getDate();
-		  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+			function updateClock(){
+				var t = getTimeRemaining(endtime);
 
-		  document.getElementById("countdown").innerHTML = months + " : " + days + " : " + hours + " : " + minutes + " : " + seconds;
+				daysSpan.innerHTML = t.days + ((t.days > 1)? " days" : " day");
+			    minutesSpan.innerHTML = (t.minutes + t.hours * 60) + ((t.minutes > 1)? " minutes" : " minute");
+			    secondsSpan.innerHTML = t.seconds + ((t.seconds > 1)? " seconds" : " second");
 
-		  if (distance < 0) {
-		    clearInterval(x);
-		    document.getElementById("countdown").innerHTML = "EXPIRED";
-		  }
-		}, 1000);
+				if(t.total<=0){
+				  clearInterval(timeinterval);
+				}
+			}
+
+			updateClock();
+			var timeinterval = setInterval(updateClock,1000);
+		}
+
+		initializeClock('countdown', new Date("Sep 23, 2017 13:00:00"));
 	</script>
+
 </html>
