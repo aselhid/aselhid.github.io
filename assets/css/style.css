@@ -1,0 +1,130 @@
+body {
+	background: #F6F6F6;
+	color: black;
+	user-select: none;
+	margin: 0;
+	overflow: hidden;
+}
+
+img {
+	user-select: none;
+}
+
+.parallax {
+	perspective: 2px;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+	-webkit-perspective-origin-x: 100%;
+	perspective-origin-x: 100%;
+}
+
+.parallax__group {
+	position: relative;
+	height: 100vh;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.parallax__layer {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	-webkit-transform-origin-x: 100%;
+    transform-origin-x: 100%;
+}
+
+.parallax__layer--base {
+	transform: translateZ(0);
+}
+
+.parallax__layer--back {
+	transform: translateZ(-2px) scale(2.05);
+}
+
+.parallax__layer--middle {
+	transform: translateZ(-1px) scale(1.5);
+}
+
+.section__one--text {
+	font-family: 'Raleway', serif;
+	font-size: 5rem;
+	position: absolute;
+	top: 50%;
+	left: 41%;
+	transform: translate(-50%,-50%);
+}
+
+.section__one--text h1 {
+	font-weight: 600;
+}
+
+.section__one--rect {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	width: 40rem;
+}
+
+.section__two {
+	transform: translateY(50%);
+}
+
+.section__two--rect {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 40rem;
+	font-weight: 700;
+}
+
+#countdown {
+	font-family: 'Montserrat', serif;
+	font-size: 4rem;
+	font-weight: 700;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 10;
+}
+
+.section__three {
+	font-family: 'Montserrat', serif;
+	transform: translateY(50%);
+}
+
+.section_three--text {
+	position: absolute;
+	transform: translate(-50%,-50%);
+	font-size: 7rem;
+}
+
+.ik {
+	top: 50%;
+	left: 25%;
+}
+
+.ing {
+	top: 80%;
+	left: 70%;
+}
+
+.gath {
+	top: 60%;
+	left: 70%;
+}
+
+.er {
+	top: 90%;
+	left: 50%;
+}
+
+.plus {
+	top: 110%;
+	left: 25%;
+}

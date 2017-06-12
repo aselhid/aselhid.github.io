@@ -2,23 +2,44 @@
 	<html>
 	<head>
 		<title>Coming Soon! | CS UI Gath 2017</title>
-		<link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway:700" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="./assets/css/app.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 	</head>
 
 	<body>
-		<div class="container-cs">
-			<img src="./assets/images/ungu.svg" />
-			<div class="text">
-				<h1>COMING<br/>SOON</h1>
+		<div class="parallax">
+			<div class="parallax__group">
+				<div class="parallax__layer parallax__layer--back">
+					<img class="section__one--rect" src="./assets/images/orange.svg">
+				</div>
+				<div class="parallax__layer parallax__layer--base">
+					<div class="section__one--text">
+						<h1>coming<br>soon</h1>
+					</div>
+				</div>
 			</div>
-		</div>
-		<div class="container-cd">
-			<img src="./assets/images/biru.svg" />
-			<div class="countdown-container" id="countdown">
-				<span class="days"></span>
-			    <span class="minutes"></span>
-			    <span class="seconds"></span>
+			<div class="parallax__group section__two">
+				<div class="parallax__layer parallax__layer--middle">
+					<img class="section__two--rect" src="./assets/images/biru.svg">
+				</div>
+				<div class="parallax__layer parallax__layer--base">
+					<div class="countdown-container" id="countdown">
+						<span class="days"></span>
+					    <span class="minutes"></span>
+					    <span class="seconds"></span>
+					</div>
+				</div>
+			</div>
+			<div class="parallax__group section__three">
+				<div class="parallax__layer parallax__layer--back">
+					<h1 class="section_three--text ik">ik</h1>
+					<h1 class="section_three--text ing">ing</h1>
+				</div>
+				<div class="parallax__layer parallax__layer--middle">
+					<h1 class="section_three--text gath">gath</h1>
+					<h1 class="section_three--text er">er</h1>
+					<h1 class="section_three--text plus">+</h1>
+				</div>
 			</div>
 		</div>
 	</body>
@@ -51,7 +72,7 @@
 
 				daysSpan.innerHTML = t.days + ((t.days > 1)? " days" : " day");
 			    minutesSpan.innerHTML = (t.minutes + t.hours * 60) + ((t.minutes > 1)? " minutes" : " minute");
-			    secondsSpan.innerHTML = t.seconds + ((t.seconds > 1)? " seconds" : " second");
+			    secondsSpan.innerHTML = t.seconds;
 
 				if(t.total<=0){
 				  clearInterval(timeinterval);
