@@ -156,6 +156,7 @@ img {
 	top: -55%;
 	left: -80%;
 	width: 15rem;
+	animation: rotation 25s linear infinite;
 }
 
 .section__one--lin1 {
@@ -193,22 +194,18 @@ img {
 	left: 65%;
 }
 
-.section__one--wav1 {
-	position: absolute;
-	width: 10rem;
-	top: 100%;
-	left: -45%;
-}
-
 .section__two--dot2 {
 	position: absolute;
-	width: 12rem;
-	transform: translate(-40rem,-40rem) rotate(90deg);
+	top: -25%;
+	left: 10%;
+	width: 8rem;
+	transform: rotate(90deg);
+	z-index: -1;
 }
 
 .section__two--lin1 {
 	position: absolute;
-	width: 25rem;
+	width: 20rem;
 	top: -5%;
 	left: 45%;
 }
@@ -225,4 +222,33 @@ img {
 	width: 10rem;
 	top: 90%;
 	left: -80%;
+}
+
+.section__two--lin2 {
+	position: absolute;
+	width: 18rem;
+	top: 75%;
+	left: 10%;
+}
+
+.section__two--wav1 {
+	position: absolute;
+	left: -50%;
+	width: 7rem;
+	transform: rotate(90deg);
+}
+
+.section__two--wav2 {
+	position: absolute;
+	width: 6rem;
+	top: 85%;
+	left: 60%;
+}
+
+@keyframes rotation {
+	0% {transform: rotate(0deg);}
+	25% {transform: rotate(90deg);}
+	50% {transform: rotate(180deg);}
+	75% {transform: rotate(270deg);}
+	100% {transform: rotate(360deg);}
 }

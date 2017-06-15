@@ -17,7 +17,6 @@
 				</div>
 				<div class="parallax__layer parallax__layer--middle">
 					<img src="./assets/images/Segitiga1.svg" class="section__one--tri1">
-					<img src="./assets/images/Wave1.svg" class="section__one--wav1">
 				</div>
 				<div class="parallax__layer parallax__layer--back">
 					<img src="./assets/images/Dots1.svg" class="section__one--dot1">
@@ -38,19 +37,22 @@
 					    <span class="minutes"></span>
 					    <span class="seconds"></span>
 					</div>
+					<img src="./assets/images/Garis3.svg" class="section__two--lin2">
 				</div>
 				<div class="parallax__layer parallax__layer--middle">
-					<img src="./assets/images/Dots2.svg" class="section__two--dot2">
 					<img src="./assets/images/Lingkaran1.svg" class="section__two--cir1">
 					<img src="./assets/images/Lingkaran2.svg" class="section__two--cir2">
 				</div>
 				<div class="parallax__layer parallax__layer--back">
 					<img src="./assets/images/Dots1.svg" class="section__one--dot1">
+					<img src="./assets/images/Wave1.svg" class="section__two--wav1">
 				</div>
 				<div class="parallax__layer parallax__layer--deep">
 					<img class="section__two--rect" src="./assets/images/biru.svg">
 				</div>
 				<div class="parallax__layer parallax__layer--deeper">
+					<img src="./assets/images/Dots2.svg" class="section__two--dot2">
+					<img src="./assets/images/Wave1.svg" class="section__two--wav2">
 				</div>
 				<div class="parallax__layer parallax__layer--deepest">
 					<img src="./assets/images/Garis3.svg" class="section__two--lin1">
@@ -101,7 +103,7 @@
 				var t = getTimeRemaining(endtime);
 
 				daysSpan.innerHTML = t.days + ((t.days > 1)? " days" : " day");
-			    minutesSpan.innerHTML = (t.minutes + t.hours * 60) + ((t.minutes > 1)? " mins" : " min");
+			    minutesSpan.innerHTML = (t.minutes + t.hours * 60) + ((t.minutes + (t.hours * 60) > 1)? " mins" : " min");
 			    secondsSpan.innerHTML = t.seconds + ((t.seconds > 1)? " secs": " sec");
 
 				if(t.total <= 0){
