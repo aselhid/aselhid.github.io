@@ -19,7 +19,7 @@
 				</div>
 			</div>
 			<div class="parallax__group section__two">
-				<div class="parallax__layer parallax__layer--middle">
+				<div class="parallax__layer parallax__layer--deep">
 					<img class="section__two--rect" src="./assets/images/biru.svg">
 				</div>
 				<div class="parallax__layer parallax__layer--base">
@@ -31,13 +31,19 @@
 				</div>
 			</div>
 			<div class="parallax__group section__three">
-				<div class="parallax__layer parallax__layer--back">
+				<div class="parallax__layer--middle">
 					<h1 class="section_three--text ik">ik</h1>
+				</div>
+				<div class="parallax__layer--back">
 					<h1 class="section_three--text ing">ing</h1>
 				</div>
-				<div class="parallax__layer parallax__layer--middle">
+				<div class="parallax__layer--deep">
 					<h1 class="section_three--text gath">gath</h1>
+				</div>
+				<div class="parallax__layer--deeper">
 					<h1 class="section_three--text er">er</h1>
+				</div>
+				<div class="parallax__layer--deepest">
 					<h1 class="section_three--text plus">+</h1>
 				</div>
 			</div>
@@ -74,7 +80,7 @@
 			    minutesSpan.innerHTML = (t.minutes + t.hours * 60) + ((t.minutes > 1)? " minutes" : " minute");
 			    secondsSpan.innerHTML = t.seconds;
 
-				if(t.total<=0){
+				if(t.total <= 0){
 				  clearInterval(timeinterval);
 				}
 			}
