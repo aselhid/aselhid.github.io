@@ -2,7 +2,7 @@
 	<html>
 	<head>
 		<title>Coming Soon! | CS UI Gath 2017</title>
-		<link href="https://fonts.googleapis.com/css?family=Montserrat:500,700|Raleway:700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:500,700|Raleway:600" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 	</head>
 
@@ -77,8 +77,8 @@
 				var t = getTimeRemaining(endtime);
 
 				daysSpan.innerHTML = t.days + ((t.days > 1)? " days" : " day");
-			    minutesSpan.innerHTML = (t.minutes + t.hours * 60) + ((t.minutes > 1)? " minutes" : " minute");
-			    secondsSpan.innerHTML = t.seconds + ((t.seconds > 1)? " seconds": " second");
+			    minutesSpan.innerHTML = (t.minutes + t.hours * 60) + ((t.minutes > 1)? " mins" : " min");
+			    secondsSpan.innerHTML = t.seconds + ((t.seconds > 1)? " secs": " sec");
 
 				if(t.total <= 0){
 				  clearInterval(timeinterval);

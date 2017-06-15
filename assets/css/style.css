@@ -62,7 +62,7 @@ img {
 
 .section__one--text {
 	font-family: 'Raleway', serif;
-	font-size: 5rem;
+	font-size: 6rem;
 	position: absolute;
 	top: 50%;
 	left: 41%;
@@ -71,7 +71,7 @@ img {
 }
 
 .section__one--text h1 {
-	font-weight: 700;
+	font-weight: 600;
 }
 
 .section__one--rect {
@@ -96,7 +96,7 @@ img {
 
 .countdown-container {
 	font-family: 'Montserrat', serif;
-	font-size: 5rem;
+	font-size: 5.5rem;
 	font-weight: 500;
 	position: absolute;
 	display: flex;
@@ -118,35 +118,35 @@ img {
 
 .section_three--text {
 	position: absolute;
-	font-weight: 600;
+	font-weight: 500;
 }
 
 .ik {
-	font-size: 17rem;
+	font-size: 22rem;
 	top: 5%;
 	left: -10%;
 }
 
 .ing {
-	font-size: 12rem;
+	font-size: 17rem;
 	top: 75%;
-	left: 45%;
+	left: 45%;	
 }
 
 .gath {
-	font-size: 12rem;
+	font-size: 15rem;
 	top: -10%;
-	left: 40%;
+	left: 30%;
 }
 
 .er {
-	font-size: 12rem;
+	font-size: 14rem;
 	top: 80%;
 	left: -85%;
 }
 
 .plus {
-	font-size: 12rem;
+	font-size: 17rem;
 	top: 30%;
 	left: -40%;
 }
