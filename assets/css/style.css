@@ -114,7 +114,7 @@ img {
 
 .section__three {
 	font-family: 'Montserrat', serif;
-	transform: translateY(100%);
+	transform: translateY(95%);
 }
 
 .section_three--text {
@@ -123,34 +123,35 @@ img {
 }
 
 .ik {
-	font-size: 24rem;
-	top: 50%;
-	left: -80%;
-}
-
-.ing {
-	font-size: 19rem;
-	top: 115%;
-	left: 40%;	
+	font-size: 10.5rem;
+	top: 70%;
+	left: 20%;
 }
 
 .gath {
 	font-size: 17rem;
-	top: 30%;
-	left: 40%;
+	top: 45%;
+	left: 30%;
 }
 
 .er {
-	font-size: 16rem;
-	top: 60%;
+	font-size: 15rem;
+	top: 70%;
 	left: 10%;
 }
 
 .plus {
-	font-size: 19rem;
-	top: 70%;
-	left: -10%;
+	font-size: 16rem;
+	top: 90%;
+	left: 0%;
 }
+
+.ing {
+	font-size: 22rem;
+	top: 180%;
+	left: 10%;
+}
+
 
 .section__one--tri1 {
 	position: absolute;
@@ -193,6 +194,7 @@ img {
 	width: 8rem;
 	top: 97%;
 	left: 65%;
+	animation: rotation 25s linear infinite;
 }
 
 .section__two--dot2 {
