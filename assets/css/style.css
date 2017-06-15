@@ -108,12 +108,12 @@ img {
 }
 
 .countdown-container span {
-	margin: 1rem;
+	margin: 2rem;
 }
 
 .section__three {
 	font-family: 'Montserrat', serif;
-	transform: translateY(150%);
+	transform: translateY(90%);
 }
 
 .section_three--text {
@@ -123,30 +123,29 @@ img {
 
 .ik {
 	font-size: 22rem;
-	top: 5%;
-	left: -10%;
+	top: 60%;
+	left: -80%;
 }
 
 .ing {
 	font-size: 17rem;
-	top: 75%;
-	left: 45%;	
+	top: 120%;
+	left: 50%;	
 }
 
 .gath {
 	font-size: 15rem;
-	top: -10%;
-	left: 30%;
+	top: 50%;
+	left: 45%;
 }
 
 .er {
 	font-size: 14rem;
-	top: 40%;
-	left: -25%;
+	top: 90%;
+	left: 20%;
 }
 
 .plus {
 	font-size: 17rem;
-	top: 65%;
-	left: -100%;
+	top: 100%;
 }
