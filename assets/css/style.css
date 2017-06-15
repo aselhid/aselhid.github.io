@@ -111,30 +111,35 @@ img {
 
 .section_three--text {
 	position: absolute;
-	transform: translate(-50%,-50%);
+	font-weight: 600;
 }
 
 .ik {
+	font-size: 18rem;
 	top: 0%;
 	left: 0%;
 }
 
 .ing {
-	top: 0%;
-	left: 0%;
+	font-size: 14rem;
+	top: 60%;
+	left: 45%;
 }
 
 .gath {
+	font-size: 12rem;
 	top: 0%;
-	left: 0%;
+	left: 40%;
 }
 
 .er {
-	top: 0%;
-	left: 0%;
+	font-size: 10rem;
+	top: 70%;
+	left: -70%;
 }
 
 .plus {
+	font-size: 10rem;
 	top: 0%;
-	left: 0%;
+	left: -40%;
 }
