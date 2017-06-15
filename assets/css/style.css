@@ -62,27 +62,28 @@ img {
 
 .section__one--text {
 	font-family: 'Raleway', serif;
-	font-size: 6rem;
+	font-size: 5rem;
 	position: absolute;
 	top: 50%;
 	left: 41%;
 	transform: translate(-50%,-50%);
+	line-height: 200%;
 }
 
 .section__one--text h1 {
-	font-weight: 600;
+	font-weight: 700;
 }
 
 .section__one--rect {
 	position: absolute;
 	top: 50%;
 	left: 0;
-	transform: translate(-125%,-50%);
-	width: 80rem;
+	transform: translate(-115%,-50%);
+	width: 70rem;
 }
 
 .section__two {
-	transform: translateY(60%);
+	transform: translateY(75%);
 }
 
 .section__two--rect {
@@ -90,18 +91,28 @@ img {
 	top: 50%;
 	left: 22%;
 	transform: translate(-50%,-50%);
-	width: 80rem;
+	width: 70rem;
 }
 
 .countdown-container {
 	font-family: 'Montserrat', serif;
 	font-size: 6rem;
-	font-weight: 700;
+	font-weight: 500;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 	z-index: 10;
+}
+
+.countdown-container span {
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 100%;
+}
+
+.days {
+	left: 50%;
 }
 
 .section__three {
@@ -115,31 +126,31 @@ img {
 }
 
 .ik {
-	font-size: 21rem;
+	font-size: 17rem;
 	top: 5%;
 	left: -10%;
 }
 
 .ing {
-	font-size: 16rem;
+	font-size: 12rem;
 	top: 75%;
 	left: 45%;
 }
 
 .gath {
-	font-size: 16rem;
+	font-size: 12rem;
 	top: -10%;
 	left: 40%;
 }
 
 .er {
-	font-size: 16rem;
+	font-size: 12rem;
 	top: 80%;
 	left: -85%;
 }
 
 .plus {
-	font-size: 16rem;
+	font-size: 12rem;
 	top: 30%;
 	left: -40%;
 }
