@@ -32,15 +32,28 @@
 				</div>
 			</div>
 			<div class="parallax__group section__two">
-				<div class="parallax__layer parallax__layer--deep">
-					<img class="section__two--rect" src="./assets/images/biru.svg">
-				</div>
 				<div class="parallax__layer parallax__layer--base">
 					<div class="countdown-container" id="countdown">
 						<span class="days"></span>
 					    <span class="minutes"></span>
 					    <span class="seconds"></span>
 					</div>
+				</div>
+				<div class="parallax__layer parallax__layer--middle">
+					<img src="./assets/images/Dots2.svg" class="section__two--dot2">
+					<img src="./assets/images/Lingkaran1.svg" class="section__two--cir1">
+					<img src="./assets/images/Lingkaran2.svg" class="section__two--cir2">
+				</div>
+				<div class="parallax__layer parallax__layer--back">
+					<img src="./assets/images/Dots1.svg" class="section__one--dot1">
+				</div>
+				<div class="parallax__layer parallax__layer--deep">
+					<img class="section__two--rect" src="./assets/images/biru.svg">
+				</div>
+				<div class="parallax__layer parallax__layer--deeper">
+				</div>
+				<div class="parallax__layer parallax__layer--deepest">
+					<img src="./assets/images/Garis3.svg" class="section__two--lin1">
 				</div>
 			</div>
 			<div class="parallax__group section__three">
@@ -62,7 +75,6 @@
 			</div>
 		</div>
 	</body>
-
 	<script type="text/javascript">
 		function getTimeRemaining(endtime){
 			var t = Date.parse(endtime) - Date.parse(new Date());
@@ -79,7 +91,6 @@
 				'seconds': seconds
 			};
 		}
-
 		function initializeClock(id, endtime){
 			var clock = document.getElementById(id);
 			var daysSpan = clock.querySelector('.days');
@@ -97,11 +108,9 @@
 				  clearInterval(timeinterval);
 				}
 			}
-
 			updateClock();
 			var timeinterval = setInterval(updateClock,1000);
 		}
-
 		initializeClock('countdown', new Date("Sep 23, 2017 13:00:00"));
 	</script>
 

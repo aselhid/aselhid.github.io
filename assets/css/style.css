@@ -24,6 +24,7 @@ img {
 	height: 100vh;
 	-webkit-transform-style: preserve-3d;
 	transform-style: preserve-3d;
+
 }
 
 .parallax__layer {
@@ -197,4 +198,31 @@ img {
 	width: 10rem;
 	top: 100%;
 	left: -45%;
+}
+
+.section__two--dot2 {
+	position: absolute;
+	width: 12rem;
+	transform: translate(-40rem,-40rem) rotate(90deg);
+}
+
+.section__two--lin1 {
+	position: absolute;
+	width: 25rem;
+	top: -5%;
+	left: 45%;
+}
+
+.section__two--cir1 {
+	position: absolute;
+	width: 10rem;
+	top: 70%;
+	left: 60%;
+}
+
+.section__two--cir2 {
+	position: absolute;
+	width: 10rem;
+	top: 90%;
+	left: -80%;
 }
