@@ -149,3 +149,52 @@ img {
 	font-size: 17rem;
 	top: 100%;
 }
+
+.section__one--tri1 {
+	position: absolute;
+	top: -55%;
+	left: -80%;
+	width: 15rem;
+}
+
+.section__one--lin1 {
+	position: absolute;
+	top: -20%;
+	left: 60%;
+	width: 18rem;
+}
+
+.section__one--dot1 {
+	position: absolute;
+	width: 1.2rem;
+	top: -28%;
+	left: 90%;
+}
+
+.section__one--cir1 {
+	position: absolute;
+	width: 6rem;
+	top: 60%;
+	left: 40%;
+}
+
+.section__one--dot2 {
+	position: absolute;
+	width: 4.5rem;
+	top: 45%;
+	left: 92%;
+}
+
+.section__one--tri2 {
+	position: absolute;
+	width: 8rem;
+	top: 97%;
+	left: 65%;
+}
+
+.section__one--wav1 {
+	position: absolute;
+	width: 10rem;
+	top: 100%;
+	left: -45%;
+}
