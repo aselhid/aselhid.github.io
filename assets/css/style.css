@@ -96,23 +96,19 @@ img {
 
 .countdown-container {
 	font-family: 'Montserrat', serif;
-	font-size: 6rem;
+	font-size: 5rem;
 	font-weight: 500;
 	position: absolute;
+	display: flex;
+	justify-content: center;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-	z-index: 10;
+	width: 100%;
 }
 
 .countdown-container span {
-	position: absolute;
-	transform: translate(-50%,-50%);
-	top: 100%;
-}
-
-.days {
-	left: 50%;
+	margin: 1rem;
 }
 
 .section__three {

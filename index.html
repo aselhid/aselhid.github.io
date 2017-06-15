@@ -78,7 +78,7 @@
 
 				daysSpan.innerHTML = t.days + ((t.days > 1)? " days" : " day");
 			    minutesSpan.innerHTML = (t.minutes + t.hours * 60) + ((t.minutes > 1)? " minutes" : " minute");
-			    secondsSpan.innerHTML = t.seconds;
+			    secondsSpan.innerHTML = t.seconds + ((t.seconds > 1)? " seconds": " second");
 
 				if(t.total <= 0){
 				  clearInterval(timeinterval);
