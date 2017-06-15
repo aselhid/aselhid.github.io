@@ -158,7 +158,6 @@ img {
 	top: -55%;
 	left: -80%;
 	width: 15rem;
-	animation: rotation 25s linear infinite;
 }
 
 .section__one--lin1 {
@@ -194,7 +193,6 @@ img {
 	width: 8rem;
 	top: 97%;
 	left: 65%;
-	animation: rotation 25s linear infinite;
 }
 
 .section__two--dot2 {
