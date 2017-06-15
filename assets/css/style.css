@@ -53,7 +53,7 @@ img {
 }
 
 .parallax__layer--deeper {
-	transform: translateZ(-4px) scale(2.6);
+	transform: translateZ(-4px) scale(1.6);
 }
 
 .parallax__layer--deepest {
@@ -88,8 +88,8 @@ img {
 .section__two--rect {
 	position: absolute;
 	top: 50%;
-	left: 0;
-	transform: translate(-64%,-50%);
+	left: 22%;
+	transform: translate(-50%,-50%);
 	width: 80rem;
 }
 
@@ -106,37 +106,35 @@ img {
 
 .section__three {
 	font-family: 'Montserrat', serif;
-	transform: translateY(100%);
+	transform: translateY(150%);
 }
 
 .section_three--text {
 	position: absolute;
 	transform: translate(-50%,-50%);
-	font-size: 7rem;
 }
 
 .ik {
-	top: 100%;
-	left: 8%;
+	top: 0%;
+	left: 0%;
 }
 
 .ing {
-	top: 100%;
-	left: 50%;
+	top: 0%;
+	left: 0%;
 }
 
 .gath {
 	top: 0%;
-	left: 35%;
-	transform: translateY(-120%);
+	left: 0%;
 }
 
 .er {
-	top: 90%;
+	top: 0%;
 	left: 0%;
 }
 
 .plus {
-	top: 150%;
-	left: 20%;
+	top: 0%;
+	left: 0%;
 }
