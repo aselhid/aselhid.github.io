@@ -114,7 +114,7 @@ img {
 
 .section__three {
 	font-family: 'Montserrat', serif;
-	transform: translateY(90%);
+	transform: translateY(100%);
 }
 
 .section_three--text {
@@ -124,31 +124,32 @@ img {
 
 .ik {
 	font-size: 24rem;
-	top: 60%;
+	top: 50%;
 	left: -80%;
 }
 
 .ing {
 	font-size: 19rem;
-	top: 120%;
-	left: 50%;	
+	top: 115%;
+	left: 40%;	
 }
 
 .gath {
 	font-size: 17rem;
-	top: 50%;
-	left: 45%;
+	top: 30%;
+	left: 40%;
 }
 
 .er {
 	font-size: 16rem;
-	top: 90%;
-	left: 20%;
+	top: 60%;
+	left: 10%;
 }
 
 .plus {
 	font-size: 19rem;
-	top: 100%;
+	top: 70%;
+	left: -10%;
 }
 
 .section__one--tri1 {
