@@ -246,6 +246,72 @@ img {
 	left: 60%;
 }
 
+.section__three--tri1 {
+	position: absolute;
+	width: 13rem;
+	top: 50%;
+	left: -50%;
+}
+
+.section__three--dot1 {
+	position: absolute;
+	width: 1.2rem;
+	top: 35%;
+	left: 90%;
+}
+
+.section__three--rec1 {
+	position: absolute;
+	width: 4rem;
+	top: 58%;
+	left: 36%;
+}
+
+.section__three--cir1 {
+	position: absolute;
+	width: 6rem;
+	top: 60%;
+	left: 60%;
+}
+
+.section__three--lin1 {
+	position: absolute;
+	width: 12rem;
+	top: 120%;
+	left: 90%;
+}
+
+.section__three--tri2 {
+	position: absolute;
+	width: 13rem;
+	top: 220%;
+	left: -10%;
+	transform: rotate(90deg);
+}
+
+.section__three--wav1 {
+	position: absolute;
+	width: 6rem;
+	top: 150%;
+	left: -5%;
+	transform: rotate(90deg);
+}
+
+.section__three--cir2 {
+	position: absolute;
+	width: 7rem;
+	top: 100%;
+	left: -30%;
+}
+
+.section__three--dot2 {
+	position: absolute;
+	width: 5.5rem;
+	top: 145%;
+	left: 5%;
+	transform: rotate(90deg);
+}
+
 @keyframes rotation {
 	0% {transform: rotate(0deg);}
 	25% {transform: rotate(90deg);}
